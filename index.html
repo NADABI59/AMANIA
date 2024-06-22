@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>AmanAI</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/sb-admin-2.css" rel="stylesheet" />
+        <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+            <!-- Include CSS files -->
+       
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link href="datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this page -->
+        <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <img src="img/logo.png" style="width: 180px; height: 60px;"
+                alt="...">
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Places</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#table">Table</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <!--img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." -->
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading  mb-0">AmanAI</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Safety is not just a privilege; it's a necessity that empowers us to live, work, and explore with confidence. It's the foundation of a thriving community where everyone can pursue their aspirations without fear.</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="input-group" style="width: 50%;">
+                        <input type="text" class="form-control bg-light border-0 small" id="searchBar" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                        <div class="input-group-append ms-2">
+                            <button class="btn btn-primary" type="button" onclick="filterPortfolio()">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center" id="portfolioItems">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="Maarif">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Maarif</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/maarif.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="Bernoussi">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Bernoussi</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/1.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="Aindiab">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Ain diab</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/2.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="Anfa">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Anfa</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/W.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="Derbghalef">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Derb Ghallef</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/maarif.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="hayhassani">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Hay Hassani</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/aindiab.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="Racine">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Racine</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/3.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 8-->
+                    <div class="col-md-6 col-lg-4 mb-5 portfolioItem" data-name="sidimaarouf">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><p>Sidi Maarouf</p><p><i class="fas fa-plus fa-3x"></i></p></div>
+                            </div>
+                            <img class="img-fluid" src="img/1.jpeg" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="page-section  mb-0" id="table">
+            <div class="container">
+                
+                <!-- About Section Content-->
+                <div class="row">
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>Area</th>
+                                            <th>Safety Rating (Day)</th>
+                                            <th>Safety Rating (Night)</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    
+                                    <tbody>
+                                        <tr>
+                                            <td> Maarif </td>
+                                            <td> 8/10  </td>
+                                            <td> 6/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Bernoussi </td>
+                                            <td> 5/10  </td>
+                                            <td> 5/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Ain Diab  </td>
+                                            <td> 8/10  </td>
+                                            <td> 4/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Anfa </td>
+                                            <td> 7/10  </td>
+                                            <td> 6/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Derb Ghallef   </td>
+                                            <td> 5/10  </td>
+                                            <td> 3/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Hay Hassani    </td>
+                                            <td> 6/10  </td>
+                                            <td> 5/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Racine    </td>
+                                            <td> 5/10  </td>
+                                            <td> 4/10    </td>
+                                        </tr>
+                                        <tr>
+                                            <td> Sidi Maarouf   </td>
+                                            <td> 8/10  </td>
+                                            <td> 8/10    </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>    
+            </div>
+        </section>
+      
+        
+       
+        <!-- Footer-->
+        <footer class="footer text-center" id="contact">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-white">CONTACT</h2>
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <P>Police : 19 ou +212 5 22 99 74 98</P> 
+                       <P>Pompiers : 15 ou +212 5 22 30 16 16</P> 
+                       <P>Samu : 15 ou +212 5 22 23 30 30</P> 
+                       <P>Hôpital 20 Août : +212 5 22 27 27 27</P> 
+                       
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                       <P>Hôpital Cheikh Khalifa : +212 5 22 91 91 91</P> 
+                       <P>Clinique Internationale de La Vision - +212 5 22 26 26 26</P> 
+                       <P>Centre Hospitalier Universitaire Ibn Rochd - +212 5 22 27 33 33</P>
+                    </div>
+                    <!-- Footer About Text-->
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; AmanAI 2024</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MAARIF</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                  
+                                    <p class="mb-4">Generally safe during the day (8/10), exercise caution at night (6/10).</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bernoussi</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                   
+                                    <p class="mb-4">Avoid isolated areas during daytime and after dark (5/10).</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ain Diab</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                   
+                                    <p class="mb-4">Very safe throughout the day (8/10), avoid isolated areas after dark (4/10).</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Anfa</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                   
+                                    <p class="mb-4"> Safe during daylight (7/10), remains relatively safe in well-lit areas at night (6/10).</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Derb Ghallef</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                  
+                                    <p class="mb-4">Generally safe during the day (6/10), use caution after dark (5/10).</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hay Hassani</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    
+                                   
+                                    <p class="mb-4"> Moderate safety during daytime (6/10), exercise caution after sunset (5/10).</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <!-- Portfolio Modal 7-->
+         <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Racine</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                   
+                                    <p class="mb-4">Avoid isolated areas during daytime (5/10) and after dark (4/10).</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Portfolio Modal 8-->
+         <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"> Sidi Maarouf</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                   
+                                    <p class="mb-4">Very safe during both day and night (8/10). </p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    <!-- Bootstrap core JavaScript-->
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include other scripts that depend on jQuery -->
+    <script src="path/to/dataTables.bootstrap4.js"></script>
+    <script src="path/to/sb-admin-2.min.js"></script>
+   <!-- Page level plugins -->
+   <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+   <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+   <!-- Page level custom scripts -->
+   <script src="js/demo/datatables-demo.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+   <script>
+   function filterPortfolio() {
+    const searchInput = document.getElementById('searchBar').value.toLowerCase();
+    // Assuming searchInput is the user's search string
+
+        const portfolioItems = document.getElementsByClassName('portfolioItem');
+
+        // Convert HTMLCollection to an array
+        const portfolioItemsArray = Array.from(portfolioItems);
+
+        portfolioItemsArray.forEach(item => {
+            const itemName = item.getAttribute('data-name');
+        
+            // Compare the data-name with the search input (case-insensitive)
+            if (itemName.toLowerCase().includes(searchInput.toLowerCase())) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+
+}
+
+document.getElementById('searchBar').addEventListener('keyup', filterPortfolio);
+</script>
+    
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *  
+       
+        
+
+       
+</body>
+
+</html>
+    
